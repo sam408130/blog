@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{% load custom_markdown %}
+{% block content %}
+<div class="posts">
+    {% for post in post_list %}
+        <section class="post">
+            <header class="post-header">
+                <h2 class="post-title"><a href="{% url 'detail' id=post.id %}">{{ post.title }}</a></h2>
+
+                    <p class="post-meta">
+                        Time: <a class="post-author" href="#">{{ post.date_time |date:'Y M d'}}</a>&nbsp&nbsp
+                        Category: <a class="post-category post-category-pure" href="">{{ post.category|title }}</a>&nbsp&nbsp
+                        Tag:
+                          {% for tag in post.tag.all %}
+                            <a class="post-category post-category-pure" href="#">{{ tag }}</a>
+                          {% endfor %}
+                    </p>
+            </header>
+
+                <div class="post-description">
+                    <p>
+                        {{ post.content|custom_markdown|truncatewords_html:100 }}
+                    </p>
+                </div>
+                <a class="pure-button" href="{% url 'detail' id=post.id %}">Read More >>> </a>
+        </section>
+    {% endfor %}
+
+    {% if post_list.object_list and post_list.paginator.num_pages > 1 %}
+      <div>
+      <ul class="pager">
+      {% if post_list.has_previous %}
+        <li><a href="?page={{ post_list.previous_page_number }}">上一页</a></li>
+      {% endif %}
+
+      {% if post_list.has_next %}
+        <li><a href="?page={{ post_list.next_page_number }}">下一页</a></li>
+      {% endif %}
+      </ul>
+      </div>
+    {% endif %}
+</div><!-- /.blog-post -->
+{% endblock %}   
