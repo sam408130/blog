@@ -23,7 +23,7 @@ class Article(models.Model):
     
     #python3使用__str__
     def __unicode__(self) :
-        return self.title.encode('utf-8')
+        return self.title
 
     class Meta:
         ordering = ['-date_time']
