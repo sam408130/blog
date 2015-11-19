@@ -1,0 +1,76 @@
+*** Starting uWSGI 2.0.11.2 (64bit) on [Thu Nov 19 12:30:54 2015] ***
+compiled with version: 4.9.2 on 19 November 2015 11:59:55
+os: Linux-4.1.0-0.bpo.2-amd64 #1 SMP Debian 4.1.6-1~bpo8+1 (2015-09-09)
+nodename: s0
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 2
+current working directory: /srv/www/blog/my_blog
+writing pidfile to /srv/www/blog/my_blog//var/run/uwsgi.pid
+detected binary path: /srv/www/blog/pyenv/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /srv/www/blog/my_blog/
+your processes number limit is 3918
+your memory page size is 4096 bytes
+ *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+detected max file descriptor number: 65536
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /srv/www/blog/my_blog//var/run/uwsgi.sock fd 6
+Python version: 2.7.9 (default, Mar  1 2015, 13:01:26)  [GCC 4.9.2]
+Set PythonHome to /srv/www/blog/pyenv
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x22eb470
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 436608 bytes (426 KB) for 5 cores
+*** Operational MODE: preforking ***
+ImportError: No module named menke.wsgi
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 23958)
+spawned uWSGI worker 1 (pid: 23959, cores: 1)
+spawned uWSGI worker 2 (pid: 23960, cores: 1)
+spawned uWSGI worker 3 (pid: 23961, cores: 1)
+spawned uWSGI worker 4 (pid: 23962, cores: 1)
+spawned uWSGI worker 5 (pid: 23963, cores: 1)
+unable to stat() /srv/www/blog/my_blog//var/log/touch-me-to-rotate-uwsgi-log, events will be triggered as soon as the file is created
+*** Starting uWSGI 2.0.11.2 (64bit) on [Thu Nov 19 12:31:21 2015] ***
+compiled with version: 4.9.2 on 19 November 2015 11:59:55
+os: Linux-4.1.0-0.bpo.2-amd64 #1 SMP Debian 4.1.6-1~bpo8+1 (2015-09-09)
+nodename: s0
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 2
+current working directory: /srv/www/blog/my_blog
+writing pidfile to /srv/www/blog/my_blog//var/run/uwsgi.pid
+detected binary path: /srv/www/blog/pyenv/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /srv/www/blog/my_blog/
+your processes number limit is 3918
+your memory page size is 4096 bytes
+ *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+detected max file descriptor number: 65536
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /srv/www/blog/my_blog//var/run/uwsgi.sock fd 6
+Python version: 2.7.9 (default, Mar  1 2015, 13:01:26)  [GCC 4.9.2]
+Set PythonHome to /srv/www/blog/pyenv
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x9c6470
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 436608 bytes (426 KB) for 5 cores
+*** Operational MODE: preforking ***
+ImportError: No module named menke.wsgi
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 23967)
+spawned uWSGI worker 1 (pid: 23968, cores: 1)
+spawned uWSGI worker 2 (pid: 23969, cores: 1)
+spawned uWSGI worker 3 (pid: 23970, cores: 1)
+spawned uWSGI worker 4 (pid: 23971, cores: 1)
+spawned uWSGI worker 5 (pid: 23972, cores: 1)
+unable to stat() /srv/www/blog/my_blog//var/log/touch-me-to-rotate-uwsgi-log, events will be triggered as soon as the file is created

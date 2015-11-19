@@ -1,0 +1,6 @@
+<uwsgi>
+    <socket>127.0.0.1:8630</socket>
+    <chdir>/srv/www/blog/my_blog</chdir>
+    <pythonpath>..</pythonpath>
+    <module>wsgi</module>
+</uwsgi>

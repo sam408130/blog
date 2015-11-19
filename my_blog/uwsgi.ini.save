@@ -1,0 +1,14 @@
+[uwsgi]
+# variables
+projectname = my_blog
+projectdomain = samleslie.com
+base = /srv/www/blog
+
+# config
+plugins = python
+master = true
+protocol = uwsgi
+env = DJANGO_SETTINGS_MODULE=%(projectname).settings
+pythonpath = %(base)/%(projectname)
+module = %(projectname).wsgi
+socket = 127.0.0.1:8889
