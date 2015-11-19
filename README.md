@@ -2,6 +2,8 @@
 
 Django + uwsgi + bootstrap + nginx 搭建自己的blog
 ---
+[DEMO](blog.samleslie.com)
+
 
 clone project
 
@@ -28,6 +30,7 @@ pip install -r requirement.txt (注意在virtualenv下，防止版本冲突)
 cd my_blog
 python manage.py runserver
 ```
+查看效果：[http://127.0.0.1:8000](http://127.0.0.1)
 
 环境部署
 
