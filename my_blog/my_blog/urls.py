@@ -1,6 +1,9 @@
 from django.conf.urls import patterns, include, url
 from django.contrib import admin
 from article.views import RSSFeed
+from django.contrib.staticfiles.urls import staticfiles_urlpatterns
+import settings
+
 
 urlpatterns = patterns('',
     # Examples:
@@ -15,4 +18,6 @@ urlpatterns = patterns('',
     url(r'^tag(?P<tag>\w+)/$', 'article.views.search_tag', name = 'search_tag'),
     url(r'^search/$','article.views.blog_search', name = 'search'),
     url(r'^feed/$', RSSFeed(), name = "RSS"),
+    url( r'^static/(?P<path>.*)$', 'django.views.static.serve',{ 'document_root': settings.STATIC_URL }),  
 )
+
