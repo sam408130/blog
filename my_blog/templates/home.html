@@ -52,11 +52,11 @@
                                   <div class="pager">
                                   <div class="pages">
                                   {% if post_list.has_previous %}
-                                    <a href="?page={{ post_list.previous_page_number }}">上一页</a>
+                                    <a href="?page={{ post_list.previous_page_number }}">pre</a>
                                   {% endif %}
 
                                   {% if post_list.has_next %}
-                                    <a href="?page={{ post_list.next_page_number }}">下一页</a>
+                                    <a href="?page={{ post_list.next_page_number }}">next</a>
                                   {% endif %}
                                   </div>
                                   </div>
