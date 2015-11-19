@@ -1,0 +1,22 @@
+{% extends "admin/base_site.html" %}
+{% load i18n %}
+
+{% block extrahead %}
+  <style>
+    .row {
+      padding: 100px;
+    }
+  </style>
+{% endblock extrahead %}
+
+{% block sidebar_menu %}{% endblock %}
+{% block breadcrumbs %}{% endblock %}
+{% block main_header %}{% endblock %}
+
+{% block content_container %}
+
+  <p class="alert alert-info">{% trans "Thanks for spending some quality time with the Web site today." %}</p>
+
+  <p><a href="{% url 'admin:index' %}" class="btn btn-primary">{% trans 'Log in again' %}</a></p>
+
+{% endblock content_container %}
